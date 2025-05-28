@@ -6,9 +6,7 @@ export default function Services() {
                     Serviços
                 </div>
                 <div className="grid grid-cols-3">
-                    <div className="w-72 h-48 border">
-
-                    </div>
+                    
                 </div>
             </div>
         </section>
