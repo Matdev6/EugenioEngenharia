@@ -32,7 +32,7 @@ export default function Header() {
             <Menu className="flex md:hidden w-7 h-7" onClick={() => setOpenNav(true)} />
 
             {openNav &&
-                <div className="md:hidden absolute h-screen top-0 w-screen flex flex-row-reverse bg-neutral-950/50 z-10" onClick={() => setOpenNav(prev => !prev)} >
+                <div className="fixed md:hidden  h-screen top-0 w-screen flex flex-row-reverse bg-neutral-950/50 z-10" onClick={() => setOpenNav(prev => !prev)} >
                     <motion.div
                         initial={{ x: 300 }}
                         animate={{ x: 0 }}

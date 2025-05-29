@@ -11,9 +11,9 @@ import { useState } from "react";
 
 
 export default function Slider() {
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(0)
     return (
-        <section id="1" className="h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[80vh] w-screen bg-neutral-900 z-10 flex items-center justify-center">
+        <section id="1" className="h-[60vh] sm:h-[50vh] md:h-[60vh] lg:h-[80vh] w-screen bg-neutral-900 z-10 flex items-center justify-center">
             <Swiper
                 modules={[Navigation, Pagination]}
                 navigation
@@ -26,7 +26,7 @@ export default function Slider() {
                         <img
                             src={slider2}
                             alt="Slide 1"
-                            className="h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[80vh] w-full object-cover opacity-80"
+                            className="h-[60vh] sm:h-[60vh] md:h-[60vh] lg:h-[80vh] w-full object-cover opacity-80"
                         />
                         {activeIndex === 0 && (
                             <motion.div
@@ -52,7 +52,7 @@ export default function Slider() {
                         <img
                             src={slider1}
                             alt="Slide 2"
-                            className="h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[80vh] w-full object-cover opacity-80"
+                            className="h-[60vh] sm:h-[60vh] md:h-[60vh] lg:h-[80vh] w-full object-cover opacity-80"
                         />
                         {activeIndex === 1 && (
                             <motion.div
