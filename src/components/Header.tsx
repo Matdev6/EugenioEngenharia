@@ -1,7 +1,7 @@
 import { Contact, Hammer, Home, Menu, Notebook } from "lucide-react"
 import { useState, type ReactNode } from "react"
 import { motion } from "motion/react"
-import logo from "../assets/logo.jpg"
+import logo from "../assets/logoHeader.png"
 
 
 export default function Header() {
@@ -22,11 +22,11 @@ export default function Header() {
     const [openNav, setOpenNav] = useState(false)
 
     return (
-        <header className="h-20 bg-[#C6C8C7] flex items-center justify-evenly">
+        <header className="h-20 bg-neutral-100 flex items-center justify-evenly">
                 
             <div className="flex items-center gap-1">
-                <img src={logo} alt="" className="h-12" />
-                <h1 className="text-xl text-neutral-700">Eugênio Engenharia</h1>
+                <img src={logo} alt="" className="h-12 mt-1" />
+                <h1 className="text-xl text-neutral-800 ">Eugênio Engenharia</h1>
             </div>
            
 

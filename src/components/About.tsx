@@ -13,7 +13,7 @@ export default function About() {
                             <p className="text-neutral-600 font-light pb-8 border-b">Trabalhamos para garantir ambientes de trabalho seguros e eficientes. Atuamos com foco em prevenção de riscos, atendimento às normas e proteção de vidas em cada projeto.
                             </p>
                             
-                            <button className="py-3 border  text-sm hover:bg-black hover:text-white transition-all duration-300 cursor-pointe mt-6">Agendar Avaliação Técnica</button>
+                            <button className="py-3 border  text-sm hover:bg-black hover:text-white transition-all duration-300 cursor-pointe mt-6 cursor-pointer">Agendar Avaliação Técnica</button>
                         </div>
                     </div>
 

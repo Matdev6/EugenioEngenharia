@@ -1,3 +1,5 @@
+import { Instagram } from "lucide-react";
+
 export default function Contact() {
     return(
         <section className="min-h-[80vh] flex flex-col items-center   ">
