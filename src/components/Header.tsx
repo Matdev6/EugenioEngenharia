@@ -22,10 +22,10 @@ export default function Header() {
     const [openNav, setOpenNav] = useState(false)
 
     return (
-        <header className="h-20 bg-neutral-100 flex items-center justify-evenly">
+        <header className="h-20 bg-neutral-300 flex items-center justify-evenly w-s">
                 
-            <div className="flex items-center gap-1">
-                <img src={logo} alt="" className="h-12 mt-1" />
+            <div className="flex items-center gap-2">
+                <img src={logo} alt="" className="h-16 mt-1" />
                 <h1 className="text-xl text-neutral-800 ">Eugênio Engenharia</h1>
             </div>
            

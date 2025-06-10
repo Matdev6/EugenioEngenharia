@@ -24,7 +24,7 @@ export default function Services() {
 	]
 
 	return (
-		<section className="flex flex-col items-center justify-center w-screen overflow-x-hidden bg-[#E5E5E5]">
+		<section className="flex flex-col items-center justify-center w-screen overflow-x-hidden bg-neutral-300">
 			<div className="xl:w-[60%] w-11/12 ">
 				<div className="flex items-center justify-center my-8 text-3xl md:text-4xl font- ">
 					Serviços

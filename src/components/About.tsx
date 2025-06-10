@@ -3,8 +3,8 @@ import about from "../assets/about.jpg"
 
 export default function About() {
     return (
-        <section className="flex flex-col items-center justify-center xl:min-h-[90vh] min-h-[80vh]">
-            <div className="xl:w-[60%] w-11/12 mb-4">
+        <section className="flex flex-col items-center justify-center xl:min-h-[90vh] min-h-[80vh] bg-b">
+            <div className="xl:w-[60%]   w-11/12 mb-4 ">
                 <div className="flex flex-col">
                     <h1 className="xl:text-5xl text-3xl font-light xl:mb-10 mb-6">Construindo um Futuro com Segurança</h1>
                     <div className="flex flex-col xl:flex-row gap-8">
