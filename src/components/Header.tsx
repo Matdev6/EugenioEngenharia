@@ -22,13 +22,13 @@ export default function Header() {
     const [openNav, setOpenNav] = useState(false)
 
     return (
-        <header className="h-20 bg-neutral-300 flex items-center justify-evenly w-s">
-                
+        <header className="h-20 bg-[#F7F7F7] flex items-center justify-evenly w-s">
+
             <div className="flex items-center gap-2">
                 <img src={logo} alt="" className="h-16 mt-1" />
                 <h1 className="text-xl text-neutral-800 ">Eugênio Engenharia</h1>
             </div>
-           
+
 
             <nav className="md:flex gap-8 text-md  font-semibold nav hidden">
                 {navs.map((item) => <a className="text-neutral-800 hover:text-neutral-400 hover:scale-105 transition-all duration-200 hover:border-b" href={item.link} key={item.label}>{item.label}</a>)}
@@ -48,7 +48,8 @@ export default function Header() {
                             {navs.map((item, index) => <a key={index} className="flex gap-3 text-lg items-center">{item.icon} {item.label}</a>)}
                         </nav>
                     </motion.div>
-                </div>}
+                </div>
+            }
 
 
 

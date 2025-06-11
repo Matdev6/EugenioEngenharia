@@ -1,4 +1,4 @@
-import { Instagram, Link, Mail, Phone } from "lucide-react";
+import { Instagram, Link, Linkedin, Mail, Phone } from "lucide-react";
 import logo from "../assets/logo.jpeg"
 
 
@@ -47,7 +47,7 @@ export default function Contact() {
                             <span className="p-2.5 bg-[#262E33] rounded-full"><Instagram className="w-6 h-6 text-yellow-400" /></span>
                             <div className="flex flex-col">
                                 <span className=" font-medium text-neutral-800">Instagram</span>
-                                <span className="text-sm text-neutral-700">eugenioengenharialtda@gmail.com</span>
+                                <span className="text-sm text-neutral-700">@eugenioengenharialtda</span>
                             </div>
                         </a>
                     </div>
@@ -58,10 +58,10 @@ export default function Contact() {
                             rel="noopener noreferrer"
                             className="flex items-center gap-3 text-neutral-700 hover:text-black transition-all"
                         >
-                            <span className="p-2.5 bg-[#262E33] rounded-full"><Link className="w-6 h-6 text-yellow-400" /></span>
+                            <span className="p-2.5 bg-[#262E33] rounded-full"><Linkedin className="w-6 h-6 text-yellow-400" /></span>
                             <div className="flex flex-col">
-                                <span className="font-medium text-neutral-800">Duvidas</span>
-                                <span className="text-sm text-neutral-700">eugenioengenharialtda@gmail.com</span>
+                                <span className="font-medium text-neutral-800">Linkedin</span>
+                                <span className="text-sm text-neutral-700">eugenioengenharialtda</span>
                             </div>
                         </a>
                     </div>
