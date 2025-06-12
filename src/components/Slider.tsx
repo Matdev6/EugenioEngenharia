@@ -14,7 +14,7 @@ import { useState } from "react";
 export default function Slider() {
 	const [activeIndex, setActiveIndex] = useState(0)
 	return (
-		<section id="1" className="h-[70vh] sm:h-[50vh] md:h-[60vh] lg:h-[80vh] w-screen bg-neutral-900 z-10 flex items-center justify-center">
+		<section id="0" className="h-[70vh] mt-20 sm:h-[50vh] md:h-[60vh] lg:h-[80vh] w-screen bg-neutral-900 z-10 flex items-center justify-center">
 			<Swiper
 				modules={[Pagination, Autoplay]}
 				pagination={{ clickable: true }}
