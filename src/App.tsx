@@ -11,8 +11,8 @@ function App() {
 		<>
 			<Header />
 			<Slider />
-			<Services />
 			<About />
+			<Services />
 			<Contact />
 			<Footer />
 		</>

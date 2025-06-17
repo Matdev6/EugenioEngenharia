@@ -4,10 +4,10 @@ import type { ReactNode } from "react"
 type ServiceCardItem = {
   icon: ReactNode,
   title: string,
-  descripition: string
+  description: string
 }
 
-export default function ServiceCard({ title, descripition, icon }: ServiceCardItem): ReactNode {
+export default function ServiceCard({ title, description, icon }: ServiceCardItem): ReactNode {
   return (
     <div className="w-full max-w-sm  sm:max-w-md md:max-w-xl bg-[#262E33] shadow-xl rounded-xl flex flex-col px-6 pt-12 pb-8 mb-6 mx-auto">
       {/* Ícone centralizado */}
@@ -22,7 +22,7 @@ export default function ServiceCard({ title, descripition, icon }: ServiceCardIt
         </h2>
 
         <p className="text-center text-neutral-400 text-sm sm:text-base mb-8">
-          {descripition}
+          {description}
         </p>
 
         <a

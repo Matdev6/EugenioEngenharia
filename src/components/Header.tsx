@@ -13,9 +13,11 @@ export default function Header() {
 
 	const navs: NavItems[] = [
 		{ label: "Início", link: "#", icon: <Home className="w-6 h-6 text-yellow-500" />, id: "0" },
-		{ label: "Serviços", link: "#", icon: <Notebook className="w-6 h-6 text-yellow-500" />, id: "1" },
-		{ label: "Sobre nós", link: "#", icon: <Hammer className="w-6 h-6 text-yellow-500" />, id: "2" },
-		{ label: "Contato", link: "#", icon: <Contact className="w-6 h-6 text-yellow-500" />, id: "3" },
+		{ label: "Quem Somos", link: "#", icon: <Hammer className="w-6 h-6 text-yellow-500" />, id: "1" },
+		{ label: "Serviços", link: "#", icon: <Notebook className="w-6 h-6 text-yellow-500" />, id: "2" },
+		{ label: "Blog", link: "#", icon: <Notebook className="w-6 h-6 text-yellow-500" />, id: "3" },
+		{ label: "Depoimento", link: "#", icon: <Notebook className="w-6 h-6 text-yellow-500" />, id: "4" },
+		{ label: "Contato", link: "#", icon: <Contact className="w-6 h-6 text-yellow-500" />, id: "5" },
 	]
 
 	const [openNav, setOpenNav] = useState(false)
@@ -41,15 +43,15 @@ export default function Header() {
 	}
 
 	return (
-		<header className={`h-20 flex items-center justify-evenly fixed w-screen z-10 top-0 transition-all duration-300 ${scrolled ? "bg-[#dbdbdb] shadow-md" : "bg-[#F7F7F7]"}`}>
+		<header className={`h-20 flex items-center justify-evenly fixed w-screen z-20 top-0 transition-all duration-300 ${scrolled ? "bg-[#dbdbdb] shadow-md" : "bg-[#C0CBD4]"}`}>
 			<div className="flex items-center gap-2">
 				<img src={logo} alt="" className="h-16 mt-1" />
-				<h1 className="text-xl text-neutral-800">Eugênio Engenharia</h1>
+				<h1 className="text-xl text-neutral-700">Eugênio Engenharia</h1>
 			</div>
 
 			<nav className="md:flex gap-8 text-md font-semibold nav hidden">
 				{navs.map((item) => (
-					<a className="text-neutral-800 hover:text-neutral-400 cursor-pointer hover:scale-105 transition-all duration-200 hover:border-b" onClick={() => scrollToSection(item.id)} key={item.label}>
+					<a className="text-neutral-800 hover:text-yellow-500 cursor-pointer hover:scale-105 transition-all duration-200 hover:border-b" onClick={() => scrollToSection(item.id)} key={item.label}>
 						{item.label}
 					</a>
 				))}
