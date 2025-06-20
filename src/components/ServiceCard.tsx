@@ -1,4 +1,3 @@
-import { motion } from "motion/react"
 import type { ReactNode } from "react"
 
 type ServiceCardItem = {
