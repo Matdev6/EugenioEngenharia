@@ -38,7 +38,7 @@ export default function Slider() { // Renomeado para refletir que não é um sli
 					<p className="mb-4 text-md md:text-base lg:text-xl max-w-3xl text-neutral-200">
 						Engenharia Ambiental - Segurança do Trabalho - Regularização de Empresas
 					</p>
-					<button className="bg-yellow-500 text-black font-semibold px-6 py-2 md:px-8 md:py-3 rounded-sm hover:bg-gray-200 hover:text-yellow-700 transition-colors duration-300 ease-in-out cursor-pointer">
+					<button className="bg-yellow-500 text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-sm hover:bg-gray-200 hover:text-yellow-700 transition-colors duration-300 ease-in-out cursor-pointer">
 						Faça um Orçamento
 					</button>
 				</motion.div>

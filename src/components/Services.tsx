@@ -1,5 +1,5 @@
-import { Trees, FileText, FireExtinguisher, Droplets, ShieldAlert, Clipboard } from 'lucide-react';
-
+import { Trees, FileText, FireExtinguisher, Droplets, ShieldAlert, Clipboard, Warehouse, ShieldCheck, Sprout } from 'lucide-react';
+import { motion } from 'motion/react';
 import ServiceCard from "./ServiceCard"
 import type { ReactNode } from "react"
 
@@ -47,13 +47,13 @@ export default function Services() {
 
 	return (
 		<section className="flex flex-col items-center xl:min-h-[calc(100vh-80px)] min-h-[80vh] scroll-mt-20 bg-[#F7F7F7] overflow-x-hidden" id="2">
-			<div className="xl:w-[80%] w-11/12 ">
+			<div className="xl:w-[80%] w-11/12">
 				<div className="flex  text-3xl md:text-4xl font-light mt-10 mb-14 ">
 					<h1>
 						Principais Serviços
 					</h1>
 				</div>
-				<div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
+				<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
 
 					{servicesCards.map((item, index) =>
 						<ServiceCard
@@ -67,48 +67,88 @@ export default function Services() {
 
 				</div>
 				<div>
-					<h1 className='text-3xl md:text-4xl font-light my-4'>
+					<h1 className="text-3xl md:text-4xl font-semibold mb-8 border-b pb-2 border-neutral-300">
 						Serviços Detalhados
 					</h1>
-					<div className='grid grid-cols-1 xl:grid-cols-3 gap-4'>
-						<div className='shadow-xl rounded-md border border-neutral-300 p-8 mt-4 bg-green-50 text-green-800'>
-							<h2 className='text-center mb-4 text-2xl'>Meio Ambiente</h2>
-							<div className=''>
-								<li>Licenciamento Ambiental (Estadual, Municipal)</li>
-								<li>Plano de Gerenciamento de Resíduos Sólidos </li>
-								<li>Relatório de Atividades Potencialmente Poluidoras – RAPP</li>
-								<li>Programa de Recebimento e Controle de Efluentes Não Domésticos – Precend </li>
-								<li>Outorgas </li>
+
+					<div className="grid grid-cols-1 xl:grid-cols-3 gap-6 mb-4">
+
+						{/* Meio Ambiente */}
+						<motion.div
+							initial={{ opacity: 0, y: 30 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.5 }}
+							className="rounded-2xl border-2 border-green-600 
+      bg-gradient-to-br from-green-50 to-white shadow-xl 
+      hover:-translate-y-1 hover:shadow-2xl transition duration-300 
+      text-green-700"
+						>
+							<div className="flex justify-center items-center gap-2 mb-6 p-6 xl:p-8">
+								<h2 className="text-center text-2xl font-medium">Meio Ambiente</h2>
+								<Sprout />
 							</div>
-						</div>
-						
-						<div className='shadow-xl rounded-md border border-yellow-300 p-8 mt-4 bg-yellow-50 text-yellow-800'>
-							<h2 className='text-center mb-4 text-2xl'>Segurança do Trabalho</h2>
-							<div className=''>
-								<li>Projeto de Segurança Contra Incêndio e Pânico - PSCIP </li>
+							<ul className="flex flex-col gap-3 px-6 pb-6">
+								<li>Licenciamento Ambiental (Estadual, Municipal)</li>
+								<li>Plano de Gerenciamento de Resíduos Sólidos</li>
+								<li>Relatório de Atividades Potencialmente Poluidoras – RAPP</li>
+								<li>Programa de Recebimento e Controle de Efluentes Não Domésticos – Precend</li>
+								<li>Outorgas</li>
+							</ul>
+						</motion.div>
+
+						{/* Segurança do Trabalho */}
+						<motion.div
+							initial={{ opacity: 0, y: 30 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.6 }}
+							className="rounded-2xl border-2 border-yellow-600 
+      bg-gradient-to-br from-yellow-50 to-white shadow-xl 
+      hover:-translate-y-1 hover:shadow-2xl transition duration-300 
+      text-yellow-700"
+						>
+							<div className="flex justify-center items-center gap-2 mb-6 p-6 xl:p-8">
+								<h2 className="text-center text-2xl font-medium">Segurança do Trabalho</h2>
+								<ShieldCheck />
+							</div>
+							<ul className="flex flex-col gap-3 px-6 pb-6">
+								<li>Projeto de Segurança Contra Incêndio e Pânico - PSCIP</li>
 								<li>Plano de Gerenciamento de Riscos</li>
-								<li>Laudo Técnico das Condições do Ambiente de Trabalho — LTCAT</li>
+								<li>Laudo Técnico das Condições do Ambiente de Trabalho – LTCAT</li>
 								<li>Laudo de Insalubridade</li>
 								<li>Mapa de Risco</li>
 								<li>Treinamentos</li>
-								<li>Programa de Condições e Meio Ambiente de Trabalho na Indústria da Construção — PCMAT</li>
-								<li>Laudos técnicos e perícias de segurança do trabalho </li>
-							</div>
-						</div>
+								<li>Programa de Condições e Meio Ambiente de Trabalho na Indústria da Construção – PCMAT</li>
+								<li>Laudos técnicos e perícias de segurança do trabalho</li>
+							</ul>
+						</motion.div>
 
-						<div className='shadow-xl rounded-md border border-red-300 p-8 mt-4 bg-red-50 text-red-900'>
-							<h2 className='text-center mb-4 text-2xl'>Regularização Urbana</h2>
-							<div className=''>
-								<li>Estudo de Impacto da Vizinhança – EIV </li>
+						{/* Regularização Urbana */}
+						<motion.div
+							initial={{ opacity: 0, y: 30 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.7 }}
+							className="rounded-2xl border-2 border-red-600 
+      bg-gradient-to-br from-red-50 to-white shadow-xl 
+      hover:-translate-y-1 hover:shadow-2xl transition duration-300 
+      text-red-700"
+						>
+							<div className="flex justify-center items-center gap-2 mb-6 p-6 xl:p-8">
+								<h2 className="text-center text-2xl font-medium">Regularização Urbana</h2>
+								<Warehouse />
+							</div>
+							<ul className="flex flex-col gap-3 px-6 pb-6">
+								<li>Estudo de Impacto da Vizinhança – EIV</li>
 								<li>Licenciamento de Engenho de Publicidade</li>
 								<li>Licenciamento de Toldo</li>
 								<li>Licenciamento de Mesas e Cadeiras</li>
 								<li>Habite-se</li>
-							</div>
-						</div>
+							</ul>
+						</motion.div>
 
 					</div>
 				</div>
+
+
 			</div>
 		</section>
 	)

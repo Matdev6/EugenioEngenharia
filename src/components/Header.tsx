@@ -15,9 +15,8 @@ export default function Header() {
 		{ label: "Início", link: "#", icon: <Home className="w-6 h-6 text-yellow-500" />, id: "0" },
 		{ label: "Quem Somos", link: "#", icon: <Hammer className="w-6 h-6 text-yellow-500" />, id: "1" },
 		{ label: "Serviços", link: "#", icon: <Notebook className="w-6 h-6 text-yellow-500" />, id: "2" },
-		{ label: "Blog", link: "#", icon: <Notebook className="w-6 h-6 text-yellow-500" />, id: "3" },
-		{ label: "Depoimento", link: "#", icon: <Notebook className="w-6 h-6 text-yellow-500" />, id: "4" },
-		{ label: "Contato", link: "#", icon: <Contact className="w-6 h-6 text-yellow-500" />, id: "5" },
+		{ label: "Clientes", link: "#", icon: <Notebook className="w-6 h-6 text-yellow-500" />, id: "3" },
+		{ label: "Contato", link: "#", icon: <Contact className="w-6 h-6 text-yellow-500" />, id: "4" },
 	]
 
 	const [openNav, setOpenNav] = useState(false)
