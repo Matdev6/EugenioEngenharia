@@ -67,7 +67,7 @@ export default function Services() {
 
 				</div>
 				<div>
-					<h1 className="text-3xl md:text-4xl font-semibold mb-8 border-b pb-2 border-neutral-300">
+					<h1 className=" text-3xl md:text-4xl font-light mb-8 border-b pb-2 border-neutral-300">
 						Serviços Detalhados
 					</h1>
 
@@ -102,7 +102,7 @@ export default function Services() {
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.6 }}
 							className="rounded-2xl border-2 border-yellow-600 
-      bg-gradient-to-br from-yellow-50 to-white shadow-xl 
+						bg-gradient-to-br from-yellow-50 to-white shadow-xl 
       hover:-translate-y-1 hover:shadow-2xl transition duration-300 
       text-yellow-700"
 						>
