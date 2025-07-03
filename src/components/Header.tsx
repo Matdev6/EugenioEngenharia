@@ -50,7 +50,7 @@ export default function Header() {
 
 			<nav className="md:flex gap-8 text-md font-semibold nav hidden">
 				{navs.map((item) => (
-					<a className="text-neutral-800 hover:text-yellow-500 cursor-pointer hover:scale-105 transition-all duration-200 hover:border-b" onClick={() => scrollToSection(item.id)} key={item.label}>
+					<a className="text-neutral-8010 hover:text-yellow-500 cursor-pointer hover:scale-105 transition-all duration-200 hover:border-b" onClick={() => scrollToSection(item.id)} key={item.label}>
 						{item.label}
 					</a>
 				))}
