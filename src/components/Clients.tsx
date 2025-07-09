@@ -52,7 +52,7 @@ export default function Clients() {
 		>
 			<div className="xl:w-[80%] w-11/12">
 
-				<h2 className="text-neutral-900 xl:text-5xl mt-2 xl:mt-10 text-4xl font-light text-center">
+				<h2 className="text-neutral-900 xl:text-5xl mt-2 xl:mt-2 text-4xl font-light text-center">
 					Alguns de nossos <span className="text-yellow-400">clientes</span>
 				</h2>
 				<p className="text-neutral-500 text-center mb-2 text-xl mt-1 xl:mt-2">
