@@ -5,16 +5,16 @@ import Blog from '../components/Blog';
 
 export { Page };
 
-function Page() {
+function Page({ title, content }: { title: string, content: string }) {
     return (
         <>
             <Helmet>
-                <title>Blog | Eugênio Engenharia</title>
-                <meta name="description" content="Fique por dentro das novidades, dicas e conteúdos exclusivos da Eugênio Engenharia." />
+                <title>{title}</title>
+                <meta name="description" content={content} />
             </Helmet>
 
             <Header />
-                <Blog />
+            <Blog />
             <Footer />
         </>
     );

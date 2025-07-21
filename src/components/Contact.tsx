@@ -5,7 +5,7 @@ import logo from "../assets/logo.jpeg"
 
 export default function Contact() {
     return (
-        <section className="min-h-[74vh] pt-26 xl:pt-10 xl:min-h-[74vh] flex flex-col items-center justify-center bg-[#F7F7F7] scroll-mt-20" id="4">
+        <section className="min-h-[74vh] pt-26 xl:pt-10 xl:min-h-[74vh] flex flex-col items-center justify-center bg-[#F7F7F7] scroll-mt-20" id="contato">
             <div className="xl:w-[60%] w-11/12 ml-2">
                 <h2 className="text-neutral-900 xl:text-5xl font-light text-4xl ">Entre em <span className="text-yellow-400">contato</span></h2>
                 <div className="flex justify-between flex-col lg:flex-row">

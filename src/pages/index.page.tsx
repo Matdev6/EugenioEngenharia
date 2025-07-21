@@ -6,6 +6,7 @@ import Clients from '../components/Clients';
 import Contact from '../components/Contact';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Blog from '../components/Blog';
 
 
 export { Page }; // Vike espera uma exportação nomeada 'Page'
@@ -31,6 +32,7 @@ function Page() {
 			<About />
 			<Services />
 			<Clients />
+			<Blog />
 			<Contact />
 			<Footer />
 		</>

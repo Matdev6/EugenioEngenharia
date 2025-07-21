@@ -6,7 +6,7 @@ import imgMobile from "../assets/imgMobile.jpg"
 export default function Slider() { // Renomeado para refletir que não é um slider
 	return (
 		<section
-			id="0"
+			id="inicio"
 			className="relative h-[75vh] mt-20 sm:h-[70vh] md:h-[70vh] lg:h-[calc(100vh-80px)] w-screen z-10 flex items-center justify-center bg-neutral-900 overflow-hidden"
 		>
 			<div className="relative w-full h-full"> {/* Container da imagem para controle de layout */}

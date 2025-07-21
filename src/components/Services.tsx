@@ -46,7 +46,7 @@ export default function Services() {
 
 
 	return (
-		<section className="flex flex-col items-center xl:min-h-[calc(100vh-80px)] min-h-[80vh] scroll-mt-20 bg-[#F7F7F7] overflow-x-hidden" id="2">
+		<section className="flex flex-col items-center xl:min-h-[calc(100vh-80px)] min-h-[80vh] scroll-mt-20 bg-[#F7F7F7] overflow-x-hidden" id="servicos">
 			<div className="xl:w-[80%] w-11/12">
 				<div className="flex  text-3xl md:text-4xl font-light mt-10 mb-14 ">
 					<h1>
@@ -67,8 +67,8 @@ export default function Services() {
 
 				</div>
 				<div>
-					<h1 className=" text-3xl md:text-4xl font-light mb-8 border-b pb-2 border-neutral-300">
-						Serviços Detalhados
+					<h1 className=" text-3xl md:text-4xl font-light mb-8 pb-">
+						Outros Processos Realizados
 					</h1>
 
 					<div className="grid grid-cols-1 xl:grid-cols-3 gap-6 mb-4">
@@ -79,7 +79,7 @@ export default function Services() {
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.5 }}
 							className="rounded-2xl border-2 border-green-600 
-      bg-gradient-to-br from-green-50 to-white shadow-xl 
+      bg-gradient-to-br from-green-200 to-green-50 shadow-xl 
       hover:-translate-y-1 hover:shadow-2xl transition duration-300 
       text-green-700"
 						>
@@ -102,7 +102,7 @@ export default function Services() {
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.6 }}
 							className="rounded-2xl border-2 border-yellow-600 
-						bg-gradient-to-br from-yellow-50 to-white shadow-xl 
+						bg-gradient-to-br from-yellow-200 to-yellow-50 shadow-xl 
       hover:-translate-y-1 hover:shadow-2xl transition duration-300 
       text-yellow-700"
 						>
@@ -127,10 +127,10 @@ export default function Services() {
 							initial={{ opacity: 0, y: 30 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.7 }}
-							className="rounded-2xl border-2 border-red-600 
-      bg-gradient-to-br from-red-50 to-white shadow-xl 
+							className="rounded-2xl border-2 border-neutral-600 
+      bg-gradient-to-br from-neutral-400 to-white shadow-xl 
       hover:-translate-y-1 hover:shadow-2xl transition duration-300 
-      text-red-700"
+      text-neutral-700"
 						>
 							<div className="flex justify-center items-center gap-2 mb-6 p-6 xl:p-8">
 								<h2 className="text-center text-2xl font-medium">Regularização Urbana</h2>

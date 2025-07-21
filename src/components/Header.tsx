@@ -12,12 +12,12 @@ export default function Header() {
 	};
 
 	const navs: NavItems[] = [
-		{ label: "Início", link: "/", icon: <Home className="w-6 h-6 text-yellow-500" />, id: "/" },
-		{ label: "Quem Somos", link: "#quem-somos", icon: <Hammer className="w-6 h-6 text-yellow-500" />, id: "1" },
-		{ label: "Serviços", link: "#servicos", icon: <Notebook className="w-6 h-6 text-yellow-500" />, id: "2" },
-		{ label: "Clientes", link: "#clientes", icon: <Notebook className="w-6 h-6 text-yellow-500" />, id: "3" },
-		{ label: "Blog", link: "/blog", icon: <Notebook className="w-6 h-6 text-yellow-500" />, id: "/blog" },
-		{ label: "Contato", link: "#contato", icon: <Contact className="w-6 h-6 text-yellow-500" />, id: "4" },
+		{ label: "Início", link: "#inicio", icon: <Home className="w-6 h-6 text-yellow-500" />, id: "inicio" },
+		{ label: "Quem Somos", link: "#quem-somos", icon: <Hammer className="w-6 h-6 text-yellow-500" />, id: "quem-somos" },
+		{ label: "Serviços", link: "#servicos", icon: <Notebook className="w-6 h-6 text-yellow-500" />, id: "servicos" },
+		{ label: "Clientes", link: "#clientes", icon: <Notebook className="w-6 h-6 text-yellow-500" />, id: "clientes" },
+		{ label: "Blog", link: "#blog", icon: <Notebook className="w-6 h-6 text-yellow-500" />, id: "blog" },
+		{ label: "Contato", link: "#contato", icon: <Contact className="w-6 h-6 text-yellow-500" />, id: "contato" },
 	];
 
 	const [openNav, setOpenNav] = useState(false);
@@ -34,65 +34,40 @@ export default function Header() {
 	const scrollToSection = (id: string) => {
 		const section = document.getElementById(id);
 		if (section) {
-			const offset = 80; // ajuste para seu header
+			const offset = 80;
 			const top = section.getBoundingClientRect().top + window.pageYOffset - offset;
 			window.scrollTo({ top, behavior: "smooth" });
 		}
 		setOpenNav(false);
 	};
 
-	const isRoutable = (link: string) => link === "/" || link === "/blog";
-
 	return (
-		<header
-			className={`h-20 flex items-center justify-evenly fixed w-screen z-20 top-0 transition-all duration-300 ${scrolled ? "bg-[#dbdbdb] shadow-md" : "bg-[#C0CBD4]"
-				}`}
-		>
-			<div className="flex items-center gap-2">
+		<header className={`h-20 flex items-center justify-evenly fixed w-screen z-20 top-0 transition-all duration-300 ${scrolled ? "bg-[#dbdbdb] shadow-md" : "bg-[#C0CBD4]"}`}>
+			<a className="flex items-center gap-2" href="/">
 				<img src={logo} alt="Logo Eugênio Engenharia" className="h-16 mt-1" />
 				<h1 className="text-xl text-neutral-700">Eugênio Engenharia</h1>
-			</div>
+			</a>
 
 			<nav className="md:flex gap-8 text-md font-semibold nav hidden">
-				{navs.map((item) => {
-					if (!isRoutable(item.link)) {
-						// scroll suave para âncoras
-						return (
-							<a
-								key={item.label}
-								href={item.link}
-								className="text-neutral-8010 hover:text-yellow-500 cursor-pointer hover:scale-105 transition-all duration-200 hover:border-b"
-								onClick={(e) => {
-									e.preventDefault();
-									scrollToSection(item.id);
-									setOpenNav(false);
-								}}
-							>
-								{item.label}
-							</a>
-						);
-					}
-					// rota SPA para "/" e "/blog"
-					return (
-						<a
-							key={item.label}
-							href={item.link}
-							className="text-neutral-8010 hover:text-yellow-500 cursor-pointer hover:scale-105 transition-all duration-200 hover:border-b"
-							onClick={() => setOpenNav(false)}
-						>
-							{item.label}
-						</a>
-					);
-				})}
+				{navs.map((item) => (
+					<a
+						key={item.label}
+						href={item.link}
+						className="text-neutral-8010 hover:text-yellow-500 cursor-pointer hover:scale-105 transition-all duration-200 hover:border-b"
+						onClick={(e) => {
+							e.preventDefault();
+							scrollToSection(item.id);
+						}}
+					>
+						{item.label}
+					</a>
+				))}
 			</nav>
 
 			<Menu className="flex md:hidden w-7 h-7" onClick={() => setOpenNav(true)} />
 
 			{openNav && (
-				<div
-					className="fixed md:hidden h-screen top-0 w-screen flex flex-row-reverse bg-neutral-950/50 z-10"
-					onClick={() => setOpenNav(false)}
-				>
+				<div className="fixed md:hidden h-screen top-0 w-screen flex flex-row-reverse bg-neutral-950/50 z-10" onClick={() => setOpenNav(false)}>
 					<motion.div
 						initial={{ x: 300 }}
 						animate={{ x: 0 }}
@@ -102,34 +77,19 @@ export default function Header() {
 						onClick={(e) => e.stopPropagation()}
 					>
 						<nav className="flex flex-col p-8 gap-10">
-							{navs.map((item) => {
-								if (!isRoutable(item.link)) {
-									return (
-										<a
-											key={item.label}
-											href={item.link}
-											className="flex gap-3 text-lg items-center text-neutral-400 cursor-pointer"
-											onClick={(e) => {
-												e.preventDefault();
-												scrollToSection(item.id);
-												setOpenNav(false);
-											}}
-										>
-											{item.icon} {item.label}
-										</a>
-									);
-								}
-								return (
-									<a
-										key={item.label}
-										href={item.link}
-										className="flex gap-3 text-lg items-center text-neutral-400 cursor-pointer"
-										onClick={() => setOpenNav(false)}
-									>
-										{item.icon} {item.label}
-									</a>
-								);
-							})}
+							{navs.map((item) => (
+								<a
+									key={item.label}
+									href={item.link}
+									className="flex gap-3 text-lg items-center text-neutral-400 cursor-pointer"
+									onClick={(e) => {
+										e.preventDefault();
+										scrollToSection(item.id);
+									}}
+								>
+									{item.icon} {item.label}
+								</a>
+							))}
 						</nav>
 					</motion.div>
 				</div>

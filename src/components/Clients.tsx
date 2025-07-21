@@ -48,7 +48,7 @@ export default function Clients() {
 	return (
 		<section
 			className="min-h-[calc(100vh-80px)] bg-white flex justify-center xl:py-18 py-8"
-			id="3"
+			id="clientes"
 		>
 			<div className="xl:w-[80%] w-11/12">
 
