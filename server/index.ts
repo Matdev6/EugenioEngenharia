@@ -1,4 +1,3 @@
-// api/index.ts
 import { renderPage } from 'vike/server'
 import type { IncomingMessage, ServerResponse } from 'http'
 
