@@ -16,7 +16,7 @@ function Page() {
 		<>
 			{/* Meta tags específicas para a sua Landing Page */}
 			<Helmet>
-				<title>Eugênio Engenharia | Soluções Completas em Engenharia</title>
+				<title>Eugênio Engenharia | Soluções Completas em Engenharia.</title>
 				<meta name="description" content="Eugênio Engenharia oferece as melhores soluções em engenharia civil, projetos arquitetônicos, consultoria e gestão de obras. Qualidade e inovação para seu projeto." />
 				<link rel="canonical" href="https://seusite.com.br/" />
 				{/* Open Graph e Twitter Cards para a Landing Page */}
