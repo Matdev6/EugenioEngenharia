@@ -1,12 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import tailwindcss from '@tailwindcss/vite-plugin'
 import vike from 'vike/plugin'
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),
-    tailwindcss(),
-    vike()
-  ],
+  plugins: [react(), tailwindcss(), vike()],
+  ssr: {
+    noExternal: ['vike']
+  },
+  server: {
+    middlewareMode: true
+  }
 })
