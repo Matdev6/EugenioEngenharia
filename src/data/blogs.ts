@@ -38,28 +38,28 @@ export const blogCardsData: BlogCardsData[] = [
         title: "Precend",
         description:
             "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
-        slug: "cadastro-ambiental-rural",
+        slug: "pgr",
     },
     {
         img: blog5,
         title: "Precend",
         description:
             "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
-        slug: "cadastro-ambiental-rural",
+        slug: "pgr",
     },
     {
         img: blog4,
         title: "Precend",
         description:
             "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
-        slug: "cadastro-ambiental-rural",
+        slug: "pgr",
     },
     {
         img: blog4,
         title: "Precend",
         description:
             "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
-        slug: "cadastro-ambiental-rural",
+        slug: "pgr",
     },
 
 ]

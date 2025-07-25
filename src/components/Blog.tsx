@@ -4,7 +4,7 @@ import BlogCard from "./BlogCard";
 
 export default function Blog() {
 
-  
+
 
     return (
         <section
@@ -22,15 +22,18 @@ export default function Blog() {
                 </div>
 
                 <div className="grid grid-cols-1 xl:grid-cols-4 gap-4 ">
-                    {blogCardsData.map((card, index) => (
-                        <BlogCard
-                            key={index}
-                            img={card.img}
-                            title={card.title}
-                            description={card.description}
-                            slug={card.slug}
-                        />
-                    ))}
+                    {blogCardsData
+                        .filter((card) => !!card.slug) // garante que só renderiza cards com slug válido
+                        .map((card, index) => (
+                            <BlogCard
+                                key={index}
+                                img={card.img}
+                                title={card.title}
+                                description={card.description}
+                                slug={card.slug}
+                            />
+                        ))}
+
                 </div>
             </div>
         </section>
