@@ -5,9 +5,9 @@
     "lib": [
       "ES2023"
     ],
-    "module": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "skipLibCheck": true,
-    "moduleResolution": "Node",
     "allowImportingTsExtensions": false,
     "verbatimModuleSyntax": false,
     "moduleDetection": "force",
