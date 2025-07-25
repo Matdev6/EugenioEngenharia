@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc --project tsconfig.node.json && vite build",
+    "dev": "vike dev",
+    "build": "tsc && vite build && vite build --ssr src/entry-server.tsx",
     "start": "node dist-server/server.js",
     "lint": "eslint .",
     "preview": "vite preview"
