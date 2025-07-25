@@ -1,7 +1,7 @@
 import blog1 from "../assets/service2.jpg"
 import blog2 from "../assets/service1.jpg"
 import blog3 from "../assets/service3.jpg"
-// import blog4 from "../assets/service4.webp"
+import blog4 from "../assets/service4.webp"
 // import blog5 from "../assets/imgMobile.jpg"
 
 export type BlogCardsData = {
@@ -33,13 +33,13 @@ export const blogCardsData: BlogCardsData[] = [
             "O Manifesto de Transporte de Resíduos (MTR) é um documento obrigatório que acompanha o transporte dos resíduos gerados pelas empresas, garantindo a rastreabilidade e o controle ambiental do destino final desses materiais.",
         slug: "/service/ctf",
     },
-    // {
-    //     img: blog4,
-    //     title: "Precend",
-    //     description:
-    //         "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
-    //     slug: "/service/pgr",
-    // },
+    {
+        img: blog4,
+        title: "Precend",
+        description:
+            "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
+        slug: "/service/pgr",
+    },
     // {
     //     img: blog5,
     //     title: "Precend",
