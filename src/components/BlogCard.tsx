@@ -13,6 +13,8 @@ export default function BlogCard({
     description,
     slug,
 }: BlogCards): ReactNode {
+    console.log("BlogCard slug:", slug);  // <-- Aqui o log
+
     return (
         <a
             href={slug}

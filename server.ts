@@ -11,6 +11,7 @@ const app = express();
 app.use(express.static(path.resolve(root, 'dist/client')));
 
 app.get('*', async (req, res, next) => {
+    console.log('Renderizando URL:', req.originalUrl);
     try {
         const pageContext = await renderPage({ urlOriginal: req.originalUrl });
 
