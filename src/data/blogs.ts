@@ -2,7 +2,7 @@ import blog1 from "../assets/service2.jpg"
 import blog2 from "../assets/service1.jpg"
 import blog3 from "../assets/service3.jpg"
 import blog4 from "../assets/service4.webp"
-// import blog5 from "../assets/imgMobile.jpg"
+import blog5 from "../assets/imgMobile.jpg"
 
 export type BlogCardsData = {
     img: string
@@ -14,10 +14,10 @@ export type BlogCardsData = {
 export const blogCardsData: BlogCardsData[] = [
     {
         img: blog1,
-        title: "PGR - Plano de Gerenciamento de Resíduos",
+        title: "PGRS - Plano de Gerenciamento de Resíduos Sólidos",
         description:
             "O Plano de Gerenciamento de Resíduos Sólidos (PGRS) é um documento técnico que descreve o conjunto de medidas voltadas para o manejo adequado dos resíduos gerados por uma atividade ou empreendimento, desde a geração até a disposição final ambientalmente adequada.",
-        slug: "/service/pgr",
+        slug: "/service/pgrs",
     },
     {
         img: blog2,
@@ -40,26 +40,26 @@ export const blogCardsData: BlogCardsData[] = [
             "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
         slug: "/service/precend",
     },
-    // {
-    //     img: blog5,
-    //     title: "Precend",
-    //     description:
-    //         "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
-    //     slug: "/service/pgr"
-    // },
-    // {
-    //     img: blog4,
-    //     title: "Precend",
-    //     description:
-    //         "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
-    //     slug: "/service/pgr",
-    // },
-    // {
-    //     img: blog4,
-    //     title: "Precend",
-    //     description:
-    //         "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
-    //     slug: "/service/pgr",
-    // },
+    {
+        img: blog5,
+        title: "Precend",
+        description:
+            "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
+        slug: "/service/pgr"
+    },
+    {
+        img: blog4,
+        title: "Licencialemento ambiental",
+        description:
+            "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
+        slug: "/service/licencialemento-ambiental",
+    },
+    {
+        img: blog4,
+        title: "AVCB – Auto de Vistoria do Corpo de Bombeiros",
+        description:
+            "O AVCB – Auto de Vistoria do Corpo de Bombeiros é o documento emitido pelo Corpo de Bombeiros Militar de Minas Gerais (CBMMG) que atesta que uma edificação possui as condições mínimas de segurança contra incêndio e pânico, conforme a legislação estadual vigente.",
+        slug: "/service/avcb",
+    },
 
 ]

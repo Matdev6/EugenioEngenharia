@@ -57,7 +57,7 @@ function Page() {
                         <li>6.	Em alguns casos, <strong className='font-semibold'>monitoramento contínuo</strong> com envio de laudos laboratoriais.</li>
                     </ul>
                 </div>
-                <div className='mt-4 xl:mt-6 flex flex-col pb-6 xl:pb-8 '>
+                <div className='mt-4 xl:mt-6 flex flex-col pb-6 xl:pb-8 border-b-2 border-b-yellow-400'>
                     <h2 className='text-neutral-800 xl:text-4xl mt-2 xl:mt-2 text-2xl font-semibold flex items-center gap-2'>Quais as consequências da não regularização?
                     </h2>
                     <p className='text-md mt-6 text-neutral-600 font-light'>Empresas que não se regularizam junto ao PRECEND podem ser notificadas e sofrer sanções como:</p>
@@ -68,7 +68,7 @@ function Page() {
                         <li>•	Complicações em fiscalizações da vigilância sanitária, órgãos ambientais e Ministério Público.</li>
                     </ul>
                 </div>
-                <div className='mt-4 xl:mt-6 flex flex-col pb-6 xl:pb-8 border-b-2 border-b-yellow-400'>
+                <div className='mt-4 xl:mt-6 flex flex-col pb-6 xl:pb-8 '>
                     <h2 className='text-neutral-800 xl:text-4xl mt-2 xl:mt-2 text-2xl font-semibold flex items-center gap-2'>Como podemos ajudar a sua empresa?
                     </h2>
                     <p className='text-md mt-6 text-neutral-600 font-light'>Somos especializados em engenharia ambiental e segurança do trabalho, com foco em regularização de empresas junto à COPASA e órgãos ambientais. Oferecemos:</p>
