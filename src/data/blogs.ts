@@ -17,49 +17,49 @@ export const blogCardsData: BlogCardsData[] = [
         title: "PGR - Plano de Gerenciamento de Resíduos",
         description:
             "O Plano de Gerenciamento de Resíduos Sólidos (PGRS) é um documento técnico que descreve o conjunto de medidas voltadas para o manejo adequado dos resíduos gerados por uma atividade ou empreendimento, desde a geração até a disposição final ambientalmente adequada.",
-        slug: "pgr",
+        slug: "/service/pgr",
     },
     {
         img: blog2,
         title: "MTR - Manifesto de Transporte de Resíduos ",
         description:
             "O Manifesto de Transporte de Resíduos (MTR) é um documento obrigatório que acompanha o transporte dos resíduos gerados pelas empresas, garantindo a rastreabilidade e o controle ambiental do destino final desses materiais.",
-        slug: "mtr",
+        slug: "/service/mtr",
     },
     {
         img: blog3,
         title: "Cadastro Técnico Federal ",
         description:
             "O Manifesto de Transporte de Resíduos (MTR) é um documento obrigatório que acompanha o transporte dos resíduos gerados pelas empresas, garantindo a rastreabilidade e o controle ambiental do destino final desses materiais.",
-        slug: "ctf",
+        slug: "/service/ctf",
     },
     {
         img: blog4,
         title: "Precend",
         description:
             "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
-        slug: "pgr",
+        slug: "/service/pgr",
     },
     {
         img: blog5,
         title: "Precend",
         description:
             "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
-        slug: "pgr",
+        slug: "/service/pgr"
     },
     {
         img: blog4,
         title: "Precend",
         description:
             "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
-        slug: "pgr",
+        slug: "/service/pgr",
     },
     {
         img: blog4,
         title: "Precend",
         description:
             "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
-        slug: "pgr",
+        slug: "/service/pgr",
     },
 
 ]

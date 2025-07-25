@@ -15,7 +15,7 @@ export default function BlogCard({
 }: BlogCards): ReactNode {
     return (
         <a
-            href={`/service/${slug}`}
+            href={slug}
             className="flex flex-col  rounded-md overflow-hidden shadow-lg bg-white hover:scale-95 transition-transform duration-200 cursor-pointer w-full sm:max-w-sm mx-auto"
         >
             <img
