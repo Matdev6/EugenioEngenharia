@@ -51,7 +51,7 @@ export const blogCardsData: BlogCardsData[] = [
     },
     {
         img: blog5,
-        title: "Licencialemento ambiental",
+        title: "Licenciamento ambiental",
         description:
             "O Licenciamento Ambiental é um procedimento administrativo que autoriza e acompanha a implantação e a operação de empreendimentos e atividades que utilizam recursos naturais ou que possam causar impactos ao meio ambiente.",
         slug: "/service/licencialemento-ambiental",
