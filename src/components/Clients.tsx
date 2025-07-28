@@ -55,9 +55,6 @@ export default function Clients() {
 				<h2 className="text-neutral-900 xl:text-5xl mt-2 xl:mt-2 text-4xl font-light text-center">
 					Alguns de nossos <span className="text-yellow-400">clientes</span>
 				</h2>
-				<p className="text-neutral-500 text-center mb-2 text-xl mt-1 xl:mt-2">
-					Empresas que confiam em nós
-				</p>
 				<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 mb-6 xl:grid-cols-4 gap-10 xl:p-8 p-4 rounded-xl mt-10">
 					{clientLogos.map((logo) => (
 						<img
@@ -72,10 +69,6 @@ export default function Clients() {
 				<h2 className="text-neutral-900 xl:text-5xl text-4xl font-light text-center">
 					Órgãos <span className="text-yellow-400">parceiros</span>
 				</h2>
-				<p className="text-neutral-500 text-center mb-2 text-xl mt-1 xl:mt-4">
-					Órgãos que confiam em nós
-				</p>
-
 
 				<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-4 gap-10 xl:p-8 p-4 rounded-xl mt-10">
 					{logos.map((logo) => (
