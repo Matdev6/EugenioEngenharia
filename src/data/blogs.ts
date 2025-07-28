@@ -3,6 +3,8 @@ import blog2 from "../assets/service1.jpg"
 import blog3 from "../assets/service3.jpg"
 import blog4 from "../assets/service4.webp"
 import blog5 from "../assets/imgMobile.jpg"
+import pgr from "../assets/slider1.webp"
+import ctf from "../assets/Cadastro-Tecnico-Federal-CTF.jpg"
 
 export type BlogCardsData = {
     img: string
@@ -27,10 +29,10 @@ export const blogCardsData: BlogCardsData[] = [
         slug: "/service/mtr",
     },
     {
-        img: blog3,
-        title: "Cadastro Técnico Federal ",
+        img: ctf,
+        title: "Cadastro Técnico Federal",
         description:
-            "O Manifesto de Transporte de Resíduos (MTR) é um documento obrigatório que acompanha o transporte dos resíduos gerados pelas empresas, garantindo a rastreabilidade e o controle ambiental do destino final desses materiais.",
+            "O Cadastro Técnico Federal (CTF) é uma exigência do Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (IBAMA) para empresas e profissionais que exercem atividades com potencial impacto ambiental. Estar cadastrado no CTF é fundamental para garantir a conformidade legal, evitar multas e demonstrar compromisso ambiental.",
         slug: "/service/ctf",
     },
     {
@@ -41,7 +43,7 @@ export const blogCardsData: BlogCardsData[] = [
         slug: "/service/precend",
     },
     {
-        img: blog5,
+        img: pgr,
         title: "PGR - Programa de Gerenciamento de Riscos",
         description:
             "O PGR (Programa de Gerenciamento de Riscos) é um documento obrigatório exigido pela NR-01, que tem como objetivo identificar, avaliar e controlar os riscos ocupacionais presentes nas atividades da empresa.",
@@ -51,7 +53,7 @@ export const blogCardsData: BlogCardsData[] = [
         img: blog5,
         title: "Licencialemento ambiental",
         description:
-            "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
+            "O Licenciamento Ambiental é um procedimento administrativo que autoriza e acompanha a implantação e a operação de empreendimentos e atividades que utilizam recursos naturais ou que possam causar impactos ao meio ambiente.",
         slug: "/service/licencialemento-ambiental",
     },
     {
