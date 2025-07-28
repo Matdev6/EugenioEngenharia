@@ -64,7 +64,7 @@ function Page() {
                     </p>
                 </div>
                
-                <a href="+55 31 8332-0618" className='xl:w-1/2 mx-auto mt-2 mb-4 flex justify-center p-2 px-3 rounded-xl bg-yellow-400 font-semibold'>Entrar em contato no WhatsApp</a>
+                <a href="https://wa.me/5531p83320618?text=Olá,%20tenho%20interesse%20nos%20seus%20serviços!" target='_blank' className='xl:w-1/2 mx-auto mt-2 mb-4 flex justify-center p-2 px-3 rounded-xl bg-yellow-400 font-semibold'>Entrar em contato no WhatsApp</a>
             </section>
         </>
     );

@@ -1,5 +1,5 @@
 import { Instagram, Linkedin, Mail, Phone } from "lucide-react";
-import logo from "../assets/logo.jpeg"
+import logo from "../assets/logoSemFundo.jpeg"
 
 
 
@@ -26,7 +26,7 @@ export default function Contact() {
                         </div>
                         <div className="flex mt-4 hover:scale-110 transition-all">
                             <a
-                                href="#"
+                                href="https://wa.me/5531983320618?text=Olá,%20tenho%20interesse%20nos%20seus%20serviços!"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center gap-3 text-neutral-700 hover:text-black transition-all"
@@ -34,7 +34,7 @@ export default function Contact() {
                                 <span className="p-2.5 bg-[#262E33] rounded-full"><Phone className="w-6 h-6 text-yellow-400" /></span>
                                 <div className="flex flex-col">
                                     <span className=" font-medium text-neutral-800">WhatsApp</span>
-                                    <span className="text-sm text-neutral-700">(31) 99498-8024</span>
+                                    <span className="text-sm text-neutral-700">(31) 98332-0618</span>
                                 </div>
                             </a>
                         </div>
