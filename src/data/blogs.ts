@@ -42,20 +42,20 @@ export const blogCardsData: BlogCardsData[] = [
     },
     {
         img: blog5,
-        title: "Precend",
+        title: "PGR - Programa de Gerenciamento de Riscos",
         description:
-            "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
+            "O PGR (Programa de Gerenciamento de Riscos) é um documento obrigatório exigido pela NR-01, que tem como objetivo identificar, avaliar e controlar os riscos ocupacionais presentes nas atividades da empresa.",
         slug: "/service/pgr"
     },
     {
-        img: blog4,
+        img: blog5,
         title: "Licencialemento ambiental",
         description:
             "O PRECEND é um programa da Companhia de Saneamento de Minas Gerais (COPASA) que regulamenta o lançamento de efluentes não domésticos (como óleos, graxas, solventes, resíduos químicos e gorduras) nas redes coletoras de esgoto.",
         slug: "/service/licencialemento-ambiental",
     },
     {
-        img: blog4,
+        img: blog3,
         title: "AVCB – Auto de Vistoria do Corpo de Bombeiros",
         description:
             "O AVCB – Auto de Vistoria do Corpo de Bombeiros é o documento emitido pelo Corpo de Bombeiros Militar de Minas Gerais (CBMMG) que atesta que uma edificação possui as condições mínimas de segurança contra incêndio e pânico, conforme a legislação estadual vigente.",
